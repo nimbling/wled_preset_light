@@ -1,0 +1,26 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WLED Preset Lamp toevoegen",
+        "description": "Koppel een WLED lamp aan je opgeslagen presets als effectenlijst. Kleur en helderheid gaan rechtstreeks naar de onderliggende lamp.",
+        "data": {
+          "name": "Naam",
+          "light_entity": "WLED Lamp",
+          "preset_select_entity": "WLED Preset Selectie"
+        },
+        "data_description": {
+          "name": "Weergavenaam voor de omhulde lamp (bijv. WLED Bar Gekoppeld)",
+          "light_entity": "De WLED lamp die gekoppeld wordt — helderheid, kleur en aan/uit worden doorgestuurd naar deze lamp",
+          "preset_select_entity": "De WLED preset selector-entity — de opties worden de effectenlijst (bijv. select.wled_bar_preset)"
+        }
+      }
+    },
+    "error": {
+      "entity_not_found": "Entity niet gevonden — controleer of de WLED integratie geladen is en het entity-ID correct is"
+    },
+    "abort": {
+      "already_configured": "Deze WLED lamp is al gekoppeld"
+    }
+  }
+}
