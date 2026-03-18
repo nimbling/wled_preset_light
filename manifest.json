@@ -1,0 +1,11 @@
+{
+  "domain": "wled_preset_light",
+  "name": "WLED Preset Light",
+  "version": "2.0.0",
+  "documentation": "",
+  "dependencies": ["wled"],
+  "codeowners": [],
+  "requirements": [],
+  "iot_class": "local_push",
+  "config_flow": true
+}

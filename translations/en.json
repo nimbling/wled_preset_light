@@ -1,0 +1,26 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add WLED Preset Light",
+        "description": "Wraps a WLED light entity to replace the palette selector with your saved WLED presets, exposed as the effect list in the native light panel. Color picking and brightness pass through transparently to the underlying light.",
+        "data": {
+          "name": "Name",
+          "light_entity": "WLED Light Entity",
+          "preset_select_entity": "WLED Preset Select Entity"
+        },
+        "data_description": {
+          "name": "Display name for the wrapped light (e.g. WLED Bar Wrapped)",
+          "light_entity": "The WLED light to wrap — brightness, color and on/off are forwarded to this entity",
+          "preset_select_entity": "The WLED preset select entity — its options become the effect list (e.g. select.wled_bar_preset)"
+        }
+      }
+    },
+    "error": {
+      "entity_not_found": "Entity not found — make sure the WLED integration is loaded and the entity ID is correct"
+    },
+    "abort": {
+      "already_configured": "This WLED light is already wrapped"
+    }
+  }
+}
